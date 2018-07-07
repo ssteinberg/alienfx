@@ -376,7 +376,7 @@ class AlienFXApp(Gtk.Application):
         self.zone_list_view.connect(
             "button-press-event", self.zone_item_selected)
         self.action_cell_renderer = AlienFXActionCellRenderer(
-            treeview=self.zone_list_view, max_colour_val=0xf)
+            treeview=self.zone_list_view, max_colour_val=0xff)
         col_colour = Gtk.TreeViewColumn(
             "Actions", self.action_cell_renderer, actions=1)
         self.zone_list_view.append_column(col_colour)
@@ -394,12 +394,12 @@ class AlienFXApp(Gtk.Application):
         self.properties_frame = self.builder.get_object("properties_frame")
         
         self.palette1 = ColourPalette(
-            self.colours, max_colour_val=0xf, num_rows=2, num_cols=10, 
+            self.colours, max_colour_val=0xff, num_rows=2, num_cols=10, 
             horizontal=True, selected_handler=self.on_colour_selected)
         self.builder.get_object("colour_palette1").add(self.palette1)
         
         self.palette2 = ColourPalette(
-            self.colours, max_colour_val=0xf, num_rows=2, num_cols=10, 
+            self.colours, max_colour_val=0xff, num_rows=2, num_cols=10, 
             horizontal=True, selected_handler=self.on_colour_selected)
         self.builder.get_object("colour_palette2").add(self.palette2)
         self.palette2.set_sensitive(False)

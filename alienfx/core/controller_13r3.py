@@ -48,8 +48,8 @@ class AlienFXController17R3(alienfx_controller.AlienFXController):
     MIDDLE_RIGHT_KEYBOARD = 0x0002
     RIGHT_KEYBOARD = 0x0001
     # Both speakers change together
-    #RIGHT_SPEAKER = 0x0020
-    #LEFT_SPEAKER = 0x0040
+    RIGHT_SPEAKER = 0x0020
+    LEFT_SPEAKER = 0x0040
     ALIEN_HEAD = 0x0080
     LOGO = 0x0100
     TOUCH_PAD = 0x0200
@@ -84,14 +84,14 @@ class AlienFXController17R3(alienfx_controller.AlienFXController):
             self.ZONE_MIDDLE_LEFT_KEYBOARD: self.MIDDLE_LEFT_KEYBOARD,
             self.ZONE_MIDDLE_RIGHT_KEYBOARD: self.MIDDLE_RIGHT_KEYBOARD,
             self.ZONE_RIGHT_KEYBOARD: self.RIGHT_KEYBOARD,
-            self.ZONE_RIGHT_SPEAKER: self.RIGHT_SPEAKER,
-            self.ZONE_LEFT_SPEAKER: self.LEFT_SPEAKER,
+#            self.ZONE_RIGHT_SPEAKER: self.RIGHT_SPEAKER,
+#            self.ZONE_LEFT_SPEAKER: self.LEFT_SPEAKER,
             self.ZONE_ALIEN_HEAD: self.ALIEN_HEAD,
             self.ZONE_LOGO: self.LOGO,
             self.ZONE_TOUCH_PAD: self.TOUCH_PAD,
-            self.ZONE_MEDIA_BAR: self.MEDIA_BAR,
+#            self.ZONE_MEDIA_BAR: self.MEDIA_BAR,
             self.ZONE_POWER_BUTTON: self.POWER_BUTTON,
-            self.ZONE_HDD_LEDS: self.HDD_LEDS,
+#            self.ZONE_HDD_LEDS: self.HDD_LEDS,
         }
         
         # zones that have special behaviour in the different power states
